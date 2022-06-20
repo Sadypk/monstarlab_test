@@ -4,13 +4,10 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is a gallery app.
+The images are called from the unsplashed api.
+Only one page worth of images are shows at the beiging, more will load when you scroll.
+You can tap on an image to see full screen.
+You can tap on the fullscreen image to see the option button at the top right corner, which will hav two options, download & share.
+You can download the image in your gallery by clikcing download or share it by clicking share.
+You can zoom in on the picture for a better view.
