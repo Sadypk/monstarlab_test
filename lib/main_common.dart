@@ -3,12 +3,14 @@ import 'package:get/get.dart';
 import 'package:monstarlab_test/root_binding.dart';
 import 'package:monstarlab_test/ui/gallery_screen.dart';
 
-void main() {
-  runApp(const MyApp());
+enum Flavor {
+  development,
+  production,
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MainCommon extends StatelessWidget {
+  final String flavor;
+  const MainCommon({Key? key, required this.flavor}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: VideoListScreen(),
+      home: const VideoListScreen(),
       initialBinding: RootBinding(),
     );
   }
